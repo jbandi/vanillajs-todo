@@ -65,5 +65,4 @@ This  runs the command `protractor src/e2e/protractor.conf.js` from within your 
 
     npm run deploy
 
-For information about GitHub Pages see: https://pages.github.com/
-
+For information about GitHub Pages see: https://help.github.com/articles/user-organization-and-project-pages/

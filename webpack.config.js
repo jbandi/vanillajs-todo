@@ -3,6 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
@@ -43,7 +44,8 @@ module.exports = {
             'window.jQuery': 'jquery',
         }),
         new webpack.optimize.CommonsChunkPlugin({names: ['vendor', 'manifest']}),
-        new ExtractTextPlugin('app/app.[chunkhash].css')
+        new ExtractTextPlugin('app/app.[chunkhash].css'),
+        new CopyWebpackPlugin([{ from: './CNAME' },])
     ],
     devServer: {
         contentBase: 'public/',
