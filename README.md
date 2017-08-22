@@ -59,3 +59,11 @@ This calls the command `webdriver-manager start` from within your `node_modules/
 	npm run e2e
 	
 This  runs the command `protractor src/e2e/protractor.conf.js` from within your `node_modules/.bin`.
+
+
+# Deploy on GitHub Pages
+
+    npm run deploy
+
+For information about GitHub Pages see: https://pages.github.com/
+

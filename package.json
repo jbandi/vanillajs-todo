@@ -17,8 +17,8 @@
     "selenium:install": "webdriver-manager update",
     "selenium:install:ie32": "webdriver-manager update --ie32",
     "selenium:run": "webdriver-manager start",
-    "e2e": "protractor src/e2e/protractor.conf.js"
-    "deploy": "gh-pages -d public"
+    "e2e": "protractor src/e2e/protractor.conf.js",
+    "deploy": "npm run build && gh-pages -d public"
   },
   "keywords": [],
   "author": "",
