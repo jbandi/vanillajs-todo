@@ -42,8 +42,8 @@ module.exports = function (config) {
         autoWatch: true,
 
         // browsers: ['PhantomJS'],
-        // browsers: ['Chrome'],
         browsers: ['ChromeHeadless'],
+        // browsers: ['Chrome'],
         // browsers: ['Safari'],
         // browsers: ['Chrome', 'Firefox', 'Safari'],
 
