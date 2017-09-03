@@ -17,6 +17,16 @@ Then go to `http://localhost:5678`
     
 Then go to `http://localhost:5679`.  
 Inspect the result in `dist`.
+
+
+# Analyze the bundles
+
+The webpack build generates a report into `build/bundle-report.html`.
+
+Another way is to run the command `npx public/app/vendor.xyz.js`.
+
+(Currently not working: `npm run bundle-buddy public/app/*.map`)
+
     
 # Run the Unit Tests
 

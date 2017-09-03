@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
     devtool: 'source-map',
@@ -45,7 +46,8 @@ module.exports = {
         }),
         new webpack.optimize.CommonsChunkPlugin({names: ['vendor', 'manifest']}),
         new ExtractTextPlugin('app/app.[chunkhash].css'),
-        new CopyWebpackPlugin([{ from: './CNAME' },])
+        new CopyWebpackPlugin([{ from: './CNAME' },]),
+        new BundleAnalyzerPlugin({reportFilename: '../build/bundle-report.html', analyzerMode: 'static', defaultSizes: 'gzip', openAnalyzer: false,})
     ],
     devServer: {
         contentBase: 'public/',
