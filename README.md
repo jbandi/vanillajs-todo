@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/jbandi/vanillajs-todo)
+
 # Dependency Management
 
 Install all build dependencies and front-end assets of the project:
